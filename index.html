@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+<link rel="stylesheet" href="text.css">
+<title>電卓</title>
+</head>
+ 
+<body>
+ <table>
+ <!-- 液晶画面部分 -->
+ <tr>
+  <td colspan="4" id="result">0</td>
+ </tr>
+ <!-- 上から1段目（7~9＋+） -->
+ <tr>
+  <td><button class="button" type="button" onclick="clickButton(this)">7</button></td>
+  <td><button class="button" type="button" onclick="clickButton(this)">8</button></td>
+  <td><button class="button" type="button" onclick="clickButton(this)">9</button></td>
+  <td><button class="button" type="button" onclick="clickButton(this)">+</button></td>
+ </tr>
+ <!-- 上から2段目（4~6＋-） -->
+ <tr>
+  <td><button class="button" type="button" onclick="clickButton(this)">4</button></td>
+  <td><button class="button" type="button" onclick="clickButton(this)">5</button></td>
+  <td><button class="button" type="button" onclick="clickButton(this)">6</button></td>
+  <td><button class="button" type="button" onclick="clickButton(this)">-</button></td>
+ </tr>
+ <!-- 上から3段目（1~3＋*） -->
+ <tr>
+  <td><button class="button" type="button" onclick="clickButton(this)">1</button></td>
+  <td><button class="button" type="button" onclick="clickButton(this)">2</button></td>
+  <td><button class="button" type="button" onclick="clickButton(this)">3</button></td>
+  <td><button class="button" type="button" onclick="clickButton(this)">*</button></td>
+ </tr>
+ <!-- 上から4段目（0/00/.//) -->
+ <tr>
+  <td><button class="button" type="button" onclick="clickButton(this)">0</button></td>
+  <td><button class="button" type="button" onclick="clickButton(this)">00</button></td>
+  <td><button class="button" type="button" onclick="clickButton(this)">.</button></td>
+  <td><button class="button" type="button" onclick="clickButton(this)">/</button></td>
+ </tr>
+ <!-- 上から５段目(AC/=) -->
+ <tr>
+  <td colspan="2"><button class="button allclear" type="button" onclick="clickButton(this)">AC</button></td>
+  <td colspan="2"><button class="button equal" type="button" onclick="clickButton(this)">=</button></td>
+ </tr>
+ </table>
+</form>
+ 
+ <script ype="text/javascript" src="text.js" charset="utf-8"></script>
+</body>
+</html>
